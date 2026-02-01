@@ -1,0 +1,34 @@
+{
+    "name": "linux-helper-agent",
+    "version": "1.0.0",
+    "description": "AI-powered Linux helper agent built on Cloudflare Workers",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite dev",
+        "start": "vite dev",
+        "build": "vite build",
+        "preview": "vite preview",
+        "deploy": "wrangler deploy",
+        "cf-typegen": "wrangler types"
+    },
+    "dependencies": {
+        "agents": "^0.3.6",
+        "ai": "^6.0.65",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-markdown": "^9.0.3",
+        "workers-ai-provider": "^3.0.4",
+        "zod": "^3.24.1"
+    },
+    "devDependencies": {
+        "@anthropic-ai/sdk": "^0.36.3",
+        "@cloudflare/vite-plugin": "^1.0.0",
+        "@cloudflare/workers-types": "^4.20250129.0",
+        "@types/react": "^19.0.0",
+        "@types/react-dom": "^19.0.0",
+        "typescript": "^5.7.3",
+        "vite": "^6.0.9",
+        "wrangler": "^4.61.1"
+    }
+}

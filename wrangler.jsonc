@@ -1,0 +1,34 @@
+{
+    "name": "linux-helper-agent",
+    "main": "./src/server.ts",
+    "compatibility_date": "2025-01-29",
+    "compatibility_flags": [
+        "nodejs_compat"
+    ],
+    "assets": {
+        "binding": "ASSETS",
+        "directory": "dist"
+    },
+    "durable_objects": {
+        "bindings": [
+            {
+                "name": "LinuxHelperAgent",
+                "class_name": "LinuxHelperAgent"
+            }
+        ]
+    },
+    "migrations": [
+        {
+            "tag": "v1",
+            "new_sqlite_classes": [
+                "LinuxHelperAgent"
+            ]
+        }
+    ],
+    "ai": {
+        "binding": "AI"
+    },
+    "observability": {
+        "enabled": true
+    }
+}
